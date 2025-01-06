@@ -109,13 +109,20 @@
 }
 
 .navbar-light .navbar-brand img {
-    max-height: 60px;
-    transition: .5s;
+    max-height: 100px;
+    transition: 0.5s;
 }
 
 .sticky-top.navbar-light .navbar-brand img {
-    max-height: 45px;
+    max-height: 100px;
 }
+
+.scrolled .navbar-brand img {
+    content: url('../img/logoo.png'); /* Replace this with the new logo's path */
+    max-height: 80px; /* Adjust height for scrolled logo if needed */
+    transition: 0.5s;
+}
+
 
 .navbar .dropdown-toggle::after {
     border: none;

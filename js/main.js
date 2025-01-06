@@ -83,3 +83,16 @@
 
 })(jQuery);
 
+
+
+
+    window.addEventListener("scroll", function () {
+        const navbar = document.querySelector(".navbar");
+        const mainLogo = document.getElementById("main-logo");
+        if (window.scrollY > 50) { // Adjust scroll threshold as needed
+            navbar.classList.add("scrolled");
+        } else {
+            navbar.classList.remove("scrolled");
+        }
+    });
+
