@@ -124,7 +124,9 @@ h4,
 @media (min-width: 1200px) {
   h4,
   .h4 {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
+    font-family: monospace;
+    color:black;
   }
 }
 h5,
@@ -428,6 +430,7 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-2 {
+    font-family:  monospace;
     font-size: 2.8rem;
   }
 }
@@ -438,7 +441,9 @@ progress {
 }
 @media (min-width: 1200px) {
   .display-3 {
-    font-size: 3rem;
+    font-size: 1.8rem;
+    font-family: monospace;
+    color: #000;
   }
 }
 .display-4 {
@@ -6708,7 +6713,8 @@ fieldset:disabled .btn {
   font-size: calc(1.275rem + 0.3vw) !important;
 }
 .fs-5 {
-  font-size: 1.25rem !important;
+  font-size: 1rem !important;
+  letter-spacing: 2px;
 }
 .fs-6 {
   font-size: 1rem !important;
