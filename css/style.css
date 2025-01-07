@@ -118,10 +118,11 @@
 }
 
 .scrolled .navbar-brand img {
-    content: url('../img/logoo.png'); /* Replace this with the new logo's path */
+    content: url('../img/logo.png'); /* Replace this with the new logo's path */
     max-height: 80px; /* Adjust height for scrolled logo if needed */
     transition: 0.5s;
 }
+
 
 
 .navbar .dropdown-toggle::after {
