@@ -105,7 +105,8 @@
 
 .navbar-light .navbar-nav .nav-link:hover,
 .navbar-light .navbar-nav .nav-link.active {
-    color: #FFDE59;
+    color: blue;
+    font-weight: bold;
 }
 
 .navbar-light .navbar-brand img {
@@ -215,7 +216,7 @@
         height: 2px;
         bottom: -1px;
         left: 50%;
-        background: var(--bs-primary);
+        background:white;
         transition: .5s;
     }
 
@@ -431,8 +432,11 @@
 }
 /*** Single Page Hero Header End ***/
 
-
 /*** Features Start ***/
+.feature {
+    padding: 60px 0;
+}
+
 .feature .feature-item {
     display: flex;
     flex-direction: column;
@@ -440,39 +444,90 @@
     text-align: center;
     background: var(--bs-white);
     border-radius: 10px;
-    transition: 0.5s;
+    padding: 30px;
+    transition: all 0.5s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .feature .feature-item:hover {
-    box-shadow: 0 0 45px rgba(0, 0, 0, .08);
+    transform: translateY(-10px); /* Subtle lift effect on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Enhanced shadow */
+    transition: all 0.3s ease-out;
 }
 
 .feature .feature-item .feature-icon {
-    width: 100px;
-    height: 100px;
+    width: 60px;
+    height: 60px;
     border-radius: 50px;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bs-secondary);
+    background: var(--bs-primary);
+    color: #fff;
+    font-size: 32px;
+    margin-bottom: 20px;
+    transition: all 0.5s ease;
+}
+
+.feature .feature-item:hover .feature-icon {
+    background: var(--bs-secondary); /* Icon background changes on hover */
+    transform: scale(1.1); /* Slight zoom effect */
 }
 
 .feature .feature-item .feature-icon i {
-    transition: 0.5s;
+    transition: transform 0.5s ease, color 0.3s ease;
 }
 
 .feature .feature-item:hover .feature-icon i {
-    transform: rotate(360deg);
+    transform: rotate(360deg); /* Full rotation */
+    color: #fff;
+}
+
+.feature .feature-item h4 {
+    font-family: "Playfair Display", serif; /* Classy, professional font */
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.feature .feature-item:hover h4 {
+    color: var(--bs-primary);
+}
+
+.feature .feature-item p {
+    font-family: "Lato", sans-serif; /* Modern, clean font for content */
+    font-size: 14px;
+    line-height: 1.8;
+    color: #666;
+    margin-bottom: 20px;
+    transition: color 0.3s ease;
+}
+
+.feature .feature-item:hover p {
+    color: #444; /* Slightly darker text on hover */
 }
 
 .feature .feature-item a.btn {
-    transition: 0.5s;
+    font-family: "Lato", sans-serif;
+    font-size: 14px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background: var(--bs-primary);
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.5s ease;
 }
 
-.feature .feature-item:hover a.btn:hover {
-    color: var(--bs-primary) !important;
+.feature .feature-item a.btn:hover {
+    background: var(--bs-secondary);
+    color: #fff !important;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
 /*** Features End ***/
+
 
 /*** About Start ***/
 .about .about-img {
