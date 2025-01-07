@@ -92,7 +92,7 @@
     margin-right: 25px;
     padding: 35px 0;
     color: var(--bs-white);
-    font-size: 17px;
+    font-size: 16px;
     font-weight: 400;
     outline: none;
     transition: .5s;
@@ -203,7 +203,7 @@
     
     .sticky-top.navbar-light {
         position: fixed;
-        background: var(--bs-light);
+        background: var(--bs-white);
         border: none;
     }
 
@@ -463,7 +463,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: var(--bs-primary);
+    background: var(--bs-secondary);
 }
 
 .feature .feature-item .feature-icon i {
@@ -905,5 +905,7 @@
     background: var(--bs-dark);
 }
 /*** copyright end ***/
-
+.strong{
+   color:#d8a24c!important;
+}
 
