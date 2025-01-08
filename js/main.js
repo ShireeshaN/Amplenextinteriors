@@ -96,3 +96,14 @@
         }
     });
 
+
+    document.addEventListener("DOMContentLoaded", function () {
+        const whatsapp = document.getElementById("whatsapp");
+        whatsapp.style.display = "none"; // Hide by default
+    
+        setTimeout(function () {
+            whatsapp.style.display = "flex"; // Show after 1 second
+        }, 1000); // Adjust the delay (1000ms = 1s) as needed
+    });
+    
+    
