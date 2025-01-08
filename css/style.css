@@ -960,8 +960,8 @@
 /* WhatsApp Button Container */
 .whatsapp {
     position: fixed;
-    bottom: 20px; /* 20px from the bottom */
-    left: 20px; /* 20px from the left */
+    bottom: 100px; /* 20px from the bottom */
+    right: 20px; /* 20px from the left */
     z-index: 9999; /* Ensure it's on top */
     width: 60px;
     height: 60px;
