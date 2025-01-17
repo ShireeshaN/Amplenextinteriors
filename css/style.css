@@ -150,7 +150,8 @@
 
 @media (max-width: 991.98px) {
     .sticky-top.navbar-light {
-        position: relative;
+        position: fixed;
+        width: 100%;
         background: var(--bs-white);
     }
 
@@ -929,6 +930,11 @@
 .footer .footer-item a:hover {
     letter-spacing: 1px;
     color: var(--bs-primary);
+}
+
+.footer .footer-item .mt-3 a:hover {
+    letter-spacing: 1px;
+    color: var(--bs-secondary);
 }
 
 .footer .footer-item .footer-btn a,
